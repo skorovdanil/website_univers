@@ -13,8 +13,11 @@ html, body {
 }
 
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     font-weight:300;
 }
@@ -177,4 +180,61 @@ body {
 @keyframes burgerAnimation {
     from {opacity: 0}
     to {opacity: 1}
+}
+
+
+.banner__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.banner__slog-title{
+    font-size: 65px;
+}
+
+.banner__title-border{
+    background-color: #3266EB;
+    color:  white;
+    border-radius: 50px;
+
+}
+
+.banner__slog-text{
+    padding-top: 40px;
+    max-width: 510px;
+    letter-spacing: 5%;
+    line-height: 1.4em;
+    font-weight:lighter;
+}
+
+.banner__slog-button{
+    padding-top: 30px;
+}
+
+.banner__slog-button a{
+    padding: 15px;
+    background-color: #3266EB;
+    color: white;
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+.banner__slog-button a img{
+    padding-left: 5px;
+}
+
+
+
+
+.statistic__container{
+    padding-top: 80px;
+}
+
+
+.statistic__container-title h2{
+    font-size: 52px;
+    font-weight: 100;
 }
