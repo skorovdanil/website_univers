@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стоматологическая клиника "Семейная"</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="#" class="header__logo">
+            <img src="img/header_logo.png" alt="" />
+          </a>
+          <div class="header__worktime">
+            <div class="header__worktime-img">
+              <img src="img/worktime.png" alt="" />
+            </div>
+            <div class="header__worktime-text">
+              <p>ПН - ПТ 09:00 - 18:00, СБ 09:00 - 14:00</p>
+            </div>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu_item">
+                <a href="" class="header__menu-link">Главная</a>
+              </li>
+              <li class="header__menu_item">
+                <a href="" class="header__menu-link">Услуги</a>
+                <ul class="header__submenu-list">
+                  <li class="header__submenu-item">
+                    <a href="" class="header__submenu-link">Десткая стоматология</a>
+                  </li>
+                  <li class="header__submenu-item">
+                    <a href="" class="header__submenu-link">Хирургия</a>
+                  </li>
+                  <li class="header__submenu-item">
+                    <a href="" class="header__submenu-link">Ортодонтия</a>
+                  </li>
+                  <li class="header__submenu-item">
+                    <a href="" class="header__submenu-link">Протезирование зубов</a>
+                  </li>
+                  <li class="header__submenu-item">
+                    <a href="" class="header__submenu-link">Пародонтология</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__menu_item">
+                <a href="" class="header__menu-link">Специалисты</a>
+              </li>
+              <li class="header__menu_item">
+                <a href="" class="header__menu-link">О клинике</a>
+              </li>
+              <li class="header__menu_item">
+                <a href="" class="header__menu-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="burger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.header__menu').classList.toggle('open');
+        })
+    </script>
+  </body>
+</html>
